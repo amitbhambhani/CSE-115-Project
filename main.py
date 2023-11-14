@@ -73,7 +73,7 @@ def convertToDictionaries(keys, values):
     for i in range(len(values)):
         ad = singleListToDict(keys, values[i])
         dictList.append(ad)
-    print(dictList)
+    return dictList
 
 
 # import lines from a csv into a list
@@ -84,7 +84,7 @@ def loadRecords(filename):
         next(reader)
         for row in reader:
             csvLines.append(row)
-    print(csvLines)
+    return csvLines
 
 
 # add the values of the passed in keys to a list
